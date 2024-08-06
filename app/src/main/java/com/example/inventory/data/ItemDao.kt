@@ -44,5 +44,5 @@ interface ItemDao {
 
     /** SQLite query to get all items in the "items" table ordered by name in ascending order */
     @Query("SELECT * FROM items ORDER BY name ASC")
-    fun getAlItems(): Flow<List<Item>>
+    fun getAllItems(): Flow<List<Item>>
 }
